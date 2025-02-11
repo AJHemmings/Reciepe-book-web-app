@@ -6,7 +6,6 @@ import Form from "./components/form/form";
 import FlashcardsContainer from "./components/flashcards/flashcards";
 import "./components/header/header.css";
 import ErrorButton from "./components/button/error";
-import * as Sentry from "@sentry/react";
 
 const recipeReducer = (state, action) => {
   switch (action.type) {
