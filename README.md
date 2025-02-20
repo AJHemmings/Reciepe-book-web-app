@@ -36,10 +36,13 @@ Welcome to the **React Flashcards** website! This project is designed to help st
    npm install
    ```
 
-4. Start the development server:
+4. Start the development server and the JSON server:
 
    ```bash
    npm run dev
+   ```
+   ```bash
+   npm run server
    ```
 
 5. Open your browser and navigate to:
