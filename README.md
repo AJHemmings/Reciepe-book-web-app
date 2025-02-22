@@ -1,12 +1,11 @@
-# React Flashcards for Learning
+# React Reciepe Book Web Application
 
-Welcome to the **React Flashcards** website! This project is designed to help students learn React concepts in an interactive and engaging way using flashcards. Users can view questions, reveal answers, and even add their own flashcards to customize their learning experience.
+This web app is designed for a School of Code hackathon project. It was designed and built in around 8 hours.
 
 ## Features
 
-- **Interactive Flashcards**: Click on a card to reveal the answer.
-- **Add Your Own Flashcards**: Easily add new questions and answers through a user-friendly form.
-- **Dynamic Learning**: Build a personalized collection of flashcards to reinforce your React knowledge.
+- **Interactive Recipes**: Click on a recipe to reveal the instructions on how to cook!.
+- **Add Your Own Recipes**: Easily add new Recipes through a user-friendly form.
 
 ## Technologies Used
 
@@ -53,21 +52,21 @@ Welcome to the **React Flashcards** website! This project is designed to help st
 
 ## Usage
 
-1. **View Flashcards**:
+1. **View Recipes**:
 
-   - The main page displays a list of flashcards.
-   - Click on a card to reveal the answer.
+   - The main page displays a list of Recipes.
+   - Click on a card to reveal the Recipe.
 
-2. **Add Flashcards**:
-   - Use the form at the bottom (or side) of the page to add new flashcards.
-   - Enter a question and an answer, then press the **Add** button.
-   - The new flashcard will appear instantly on the page.
+2. **Add Recipes**: *this requires JSON database to be installed - the deployed version is not currently linked to a database*
+   - Use the form at the top of the page to add new Recipes.
+   - Enter your title, ingredients, and instrcutions then press the **Add** button.
+   - The new Recipes will appear instantly on the page.
 
 ### Key Components
 
-- **Flashcard**: Displays a single question and reveals the answer on click.
-- **FlashcardList**: Renders the collection of flashcards.
-- **AddFlashcardForm**: Provides the form for adding new flashcards.
+- **Recipes**: Displays a single image and reveals the instructions on click.
+- **Recipes List**: Renders the collection of Recipes.
+- **AddRecipesForm**: Provides the form for adding new Recipes.
 
 ## Contribution
 
