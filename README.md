@@ -34,8 +34,10 @@ This web app is designed for a School of Code hackathon project. It was designed
    ```bash
    npm install
    ```
-
-4. Start the development server and the JSON server:
+4. **Set up JSON Server**:
+   ```bash
+   npm install -g json-server
+5. Start the development server and the JSON server:
 
    ```bash
    npm run dev
@@ -44,7 +46,7 @@ This web app is designed for a School of Code hackathon project. It was designed
    npm run server
    ```
 
-5. Open your browser and navigate to:
+6. Open your browser and navigate to:
 
    ```
    http://localhost:5173
