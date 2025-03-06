@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <ErrorButton />
+{/*       <ErrorButton /> */}
       <Form dispatch={dispatch} />
       <FlashcardsContainer recipes={recipes} />
       <Footer />
