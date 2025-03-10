@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react(), sentryVitePlugin({
     org: "school-of-code-70",
     project: "javascript-react"
+  }), sentryVitePlugin({
+    org: "school-of-code-70",
+    project: "web-app"
   })],
 
   build: {

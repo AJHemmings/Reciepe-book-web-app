@@ -9,6 +9,13 @@ function Header() {
       </header>
       <h1>Student Recipes</h1>
       <p>Easy, Quick & Budget-Friendly Meals</p>
+      <button
+        onClick={() => {
+          throw new Error("This is your first error!");
+        }}
+      >
+        Break the world
+      </button>
     </div>
   );
 }
