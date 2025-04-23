@@ -50,7 +50,7 @@
 
 .flashcard-back {
   transform: rotateY(180deg);
-  background-image: url("beige-wooden-table-wooden-background.jpg");
+  background-image: url("/assests/beige-wooden-table-wooden-background.jpg");
 }
 
 .flashcard-text {
