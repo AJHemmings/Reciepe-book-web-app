@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./flashcard.css";
+import backImage from "../../../../public/assets/beige-wooden-textured-flooring-background.jpg";
 
 function Flashcard({ title, ingredients, instructions, img }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -23,7 +24,7 @@ function Flashcard({ title, ingredients, instructions, img }) {
       </div>
       <div className="flashcard-back">
         <img
-          src="/src/assets/beige-wooden-textured-flooring-background.jpg"
+          src={backImage}
           alt="background chopping board"
           className="card-image"
         />
