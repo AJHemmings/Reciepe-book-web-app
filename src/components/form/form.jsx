@@ -1,39 +1,69 @@
 import React, { useState } from "react";
 import "./form.css";
-import { use } from "react";
-
+import supabase from "../../utils/supabase";
 
 function Form({ dispatch }) {
   const [title, setTitle] = useState("");
   const [imgUrl, setImgUrl] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newRecipe = { title, imgUrl, ingredients, instructions };
+    const formData = new FormData(e.target);
+    const newRecipe = {
+      title: formData.get("title"),
+      ingredients: formData.get("ingredients"),
+      instructions: formData.get("instructions"),
+      imgUrl: formData.get("imgUrl"),
+    };
 
-    const response = await fetch("http://localhost:5001/recipes", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newRecipe),
-    });
+    // Insert into Supabase
+    const { data, error } = await supabase
+      .from("recipes")
+      .insert([newRecipe])
+      .select()
+      .single();
 
-    if (response.ok) {
-      dispatch({
-        type: "ADD_RECIPE",
-        payload: newRecipe,
-      });
-
-      setTitle("");
-      setIngredients("");
-      setInstructions("");
-      setImgUrl("");
+    if (error) {
+      console.error("Error adding recipe:", error);
+      return;
     }
+
+    // Dispatch to update local state
+    dispatch({ type: "ADD_RECIPE", payload: data });
   };
+
+  // function Form({ dispatch }) {
+  //   const [title, setTitle] = useState("");
+  //   const [imgUrl, setImgUrl] = useState("");
+  //   const [ingredients, setIngredients] = useState("");
+  //   const [instructions, setInstructions] = useState("");
+
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     const newRecipe = { title, imgUrl, ingredients, instructions };
+
+  //     const response = await fetch("http://localhost:5001/recipes", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(newRecipe),
+  //     });
+
+  //     if (response.ok) {
+  //       dispatch({
+  //         type: "ADD_RECIPE",
+  //         payload: newRecipe,
+  //       });
+
+  //       setTitle("");
+  //       setIngredients("");
+  //       setInstructions("");
+  //       setImgUrl("");
+  //     }
+  //   };
 
   return (
     <form onSubmit={handleSubmit} className="form">
@@ -46,12 +76,12 @@ function Form({ dispatch }) {
         className="title-entry"
       />
       <input
-      type="text"
-      placeholder="Image URL"
-      value={imgUrl}
-      onChange={(e)=> setImgUrl(e.target.value)}
-      required
-      className="title-entry"
+        type="text"
+        placeholder="Image URL"
+        value={imgUrl}
+        onChange={(e) => setImgUrl(e.target.value)}
+        required
+        className="title-entry"
       />
       <textarea
         placeholder="Ingredients"

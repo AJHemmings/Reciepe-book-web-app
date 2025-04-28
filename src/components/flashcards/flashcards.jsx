@@ -1,20 +1,28 @@
 import React, { useState, useEffect } from "react";
+import { createClient } from "@supabase/supabase-js";
 import Flashcard from "./cards/flashcard";
 import "./flashcards.css";
+import supabase from "../../utils/supabase";
 
 function FlashcardsContainer({ recipes }) {
   const initialCards = [];
-
   const [allCards, setAllCards] = useState([...initialCards]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5001/recipes");
-        const data = await response.json();
+        // Fetch recipes from Supabase
+        const { data, error } = await supabase
+          .from("recipes")
+          .select("id, title, imgUrl, ingredients, instructions");
+
+        if (error) {
+          throw error;
+        }
+
         setAllCards([...initialCards, ...data]);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data from Supabase:", error.message);
       }
     };
     fetchData();
