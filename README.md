@@ -22,7 +22,7 @@ Welcome to the Student Recipes App! This project is designed to help students an
 - https://reciepe-book-web-app-git-main-adams-projects-ff804fb2.vercel.app/
 
 ## Version History
-- [V 1](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?usp=sharing)
+- [V 1.0.0](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?usp=sharing)
 - [V 1.0.1](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?tab=t.blqgb2gn7obc)
 - [V 1.1.0](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?tab=t.yupy5489taz)
 
