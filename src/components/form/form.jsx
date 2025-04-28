@@ -13,8 +13,10 @@ function Form({ dispatch }) {
 
     const newRecipe = {
       title,
-      ingredients,
-      instructions,
+      ingredients: ingredients.split("\n").filter((step) => step.trim() !== ""), // Split by newlines
+      instructions: instructions
+        .split("\n")
+        .filter((step) => step.trim() !== ""), // Split by newline
       imgUrl,
     };
 
@@ -53,14 +55,14 @@ function Form({ dispatch }) {
         className="title-entry"
       />
       <textarea
-        placeholder="Ingredients"
+        placeholder="Ingredients - Enter one ingredient per line."
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)}
         required
         className="fixed-textarea"
       />
       <textarea
-        placeholder="Instructions"
+        placeholder="Instructions - Enter one instruction per line."
         value={instructions}
         onChange={(e) => setInstructions(e.target.value)}
         required
