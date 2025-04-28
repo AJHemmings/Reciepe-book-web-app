@@ -11,9 +11,15 @@ function Form({ dispatch }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const processedIngredients = ingredients
+      .split("\n")
+      .map((item) => item.trim())
+      .filter((item) => item.length > 0)
+      .join(", ");
+
     const newRecipe = {
       title,
-      ingredients: ingredients.split("\n").filter((step) => step.trim() !== ""), // Split by newlines
+      ingredients: processedIngredients,
       instructions: instructions
         .split("\n")
         .filter((step) => step.trim() !== ""), // Split by newline
