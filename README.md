@@ -1,9 +1,9 @@
 ## Student Recipes!
 - Easy, Quick & Budget-Friendly Meals!
 
-## What does it do?
+## What does it do? 📄
 
-📄Welcome to the Student Recipes App! This project is designed to help students and those on a budget to learn fast *Easy, Quick & Budget-Friendly Meals* Users can view recipes, reveal ingredients and instructions, and even add their own recipes to customize their dinning experience.
+Welcome to the Student Recipes App! This project is designed to help students and those on a budget to learn fast *Easy, Quick & Budget-Friendly Meals* Users can view recipes, reveal ingredients and instructions, and even add their own recipes to customize their dinning experience.
 
 ## Features 
 - **Interactive Recipes**: Click on a recipe to reveal the ingredients and instructions.
