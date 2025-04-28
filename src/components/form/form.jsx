@@ -40,6 +40,11 @@ function Form({ dispatch }) {
 
     // Dispatch to update local state
     dispatch({ type: "ADD_RECIPE", payload: data });
+
+    setTitle("");
+    setImgUrl("");
+    setIngredients("");
+    setInstructions("");
   };
 
   return (
