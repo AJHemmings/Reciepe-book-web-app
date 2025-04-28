@@ -1,16 +1,16 @@
-## Student Recipes!
+## Student Recipes! 🍴
 - Easy, Quick & Budget-Friendly Meals!
 
 ## What does it do? 📄
 
 Welcome to the Student Recipes App! This project is designed to help students and those on a budget to learn fast *Easy, Quick & Budget-Friendly Meals* Users can view recipes, reveal ingredients and instructions, and even add their own recipes to customize their dinning experience.
 
-## Features 
+## Features ⚡
 - **Interactive Recipes**: Click on a recipe to reveal the ingredients and instructions.
 - **Add Your Own Recipes**: Easily add new recipes, ingredients and images through a user-friendly form.
 - **Dynamic Recipe Book**: Build a personalized collection of recipes to reinforce your cullinary skills.
   
-## Technologies Used
+## Technologies Used 💻
 
 - **React**: Frontend framework for building the interactive UI.
 - **CSS**: Styling for the application.
@@ -18,29 +18,29 @@ Welcome to the Student Recipes App! This project is designed to help students an
 - **Vercel**: Deployment and analytics.
 - **Supabase**: Database.
 
-## Hosted on Vercel
+## Hosted on Vercel 🛜
 - https://reciepe-book-web-app-git-main-adams-projects-ff804fb2.vercel.app/
 
-## Installation
+## Installation 💻
 
-1. Clone the repository:
+1. Clone the repository: ✅
 
    ```bash
    git clone https://github.com/AJHemmings/Reciepe-book-web-app
    ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory: ✅
 
    ```bash
    cd Reciepe-book-web-app
    
-3. Install dependencies:
+3. Install dependencies: ✅
 
    ```bash
    npm install
    ```
    
-4. Open your browser and navigate to:
+4. Open your browser and navigate to: ✅
 
    ```
    http://localhost:5173
