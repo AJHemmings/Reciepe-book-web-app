@@ -1,53 +1,51 @@
-# React Recipe book web app
+## Student Recipes! 🍴
+Easy, Quick & Budget-Friendly Meals!
 
-Welcome to the **Recipe book** website! This project is designed to help students and those on a budget to learn fast *Easy, Quick & Budget-Friendly Meals* Users can view recipes, reveal ingredients and instructions, and even add their own recipes to customize their dinning experience.
+## What does it do? 📄
 
-## Features
+Welcome to the Student Recipes App! This project is designed to help students and those on a budget to learn fast *Easy, Quick & Budget-Friendly Meals* Users can view recipes, reveal ingredients and instructions, and even add their own recipes to customize their dinning experience.
 
+## Features ⚡
 - **Interactive Recipes**: Click on a recipe to reveal the ingredients and instructions.
 - **Add Your Own Recipes**: Easily add new recipes, ingredients and images through a user-friendly form.
 - **Dynamic Recipe Book**: Build a personalized collection of recipes to reinforce your cullinary skills.
-
-## Technologies Used
+  
+## Technologies Used 💻
 
 - **React**: Frontend framework for building the interactive UI.
 - **CSS**: Styling for the application.
 - **JavaScript**: Logic and interactivity.
 - **Vercel**: Deployment and analytics.
+- **Supabase**: Database.
 
-## Hosted on Vercel
+## Hosted on Vercel 🛜
+- https://reciepe-book-web-app-git-main-adams-projects-ff804fb2.vercel.app/
 
-## Installation
+## Version History
+- [V 1.0.0](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?usp=sharing)
+- [V 1.0.1](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?tab=t.blqgb2gn7obc)
+- [V 1.1.0](https://docs.google.com/document/d/1iAXr8d8GiVJGw_w-mQ_rHdtpWsWzaJQgMw1SSjUm2oQ/edit?tab=t.yupy5489taz)
 
-1. Clone the repository:
+## Installation 💻
+
+1. Clone the repository: ✅
 
    ```bash
    git clone https://github.com/AJHemmings/Reciepe-book-web-app
    ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory: ✅
 
    ```bash
    cd Reciepe-book-web-app
-
-3. Install dependencies:
+   
+3. Install dependencies: ✅
 
    ```bash
    npm install
    ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Start the local JSON database:
-   ```bash
-   npm run server
-   ```
-
-6. Open your browser and navigate to:
+   
+4. Open your browser and navigate to: ✅
 
    ```
    http://localhost:5173
@@ -63,7 +61,7 @@ Welcome to the **Recipe book** website! This project is designed to help student
 2. **Add Recipes**:
    - Use the form at the top of the page to add new recipes.
    - Enter a title, image URL, ingredients, and instructions, then press the **Add** button.
-   - The new recipes will appear instantly on the page. *KNOWN BUG - A refresh of the page may be required to re populate all recipes*
+   - The new recipes will appear instantly on the page. 
 
 ### Key Components
 
@@ -90,10 +88,7 @@ We welcome contributions to improve this project! Here's how you can help:
    ```
 5. Create a pull request.
 
-## Acknowledgments
-
-Special thanks to all React learners and contributors who make coding a collaborative and fun experience!
 
 ---
 
-Happy Learning! 🚀
+Happy cooking! 🚀
