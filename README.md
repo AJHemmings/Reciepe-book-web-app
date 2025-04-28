@@ -90,10 +90,7 @@ We welcome contributions to improve this project! Here's how you can help:
    ```
 5. Create a pull request.
 
-## Acknowledgments
-
-Special thanks to all React learners and contributors who make coding a collaborative and fun experience!
 
 ---
 
-Happy Learning! 🚀
+Happy cooking! 🚀
