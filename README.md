@@ -1,5 +1,5 @@
 ## Student Recipes! 🍴
-- Easy, Quick & Budget-Friendly Meals!
+Easy, Quick & Budget-Friendly Meals!
 
 ## What does it do? 📄
 
