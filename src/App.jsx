@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -20,6 +20,7 @@ const recipeReducer = (state, action) => {
 
 function App() {
   const [recipes, dispatch] = useReducer(recipeReducer, []);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     async function fetchRecipes() {
@@ -44,7 +45,14 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <Form dispatch={dispatch} />
+      <div className="main-content">
+        <div className="form-toggle">
+          <button onClick={() => setShowForm((prev) => !prev)}>
+            {showForm ? "Close Form" : "Add Recipe"}
+          </button>
+          {showForm && <Form dispatch={dispatch} />}
+        </div>
+      </div>
       <FlashcardsContainer recipes={recipes} />
       <Footer />
     </div>
