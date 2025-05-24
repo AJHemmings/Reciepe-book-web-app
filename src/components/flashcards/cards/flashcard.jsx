@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./flashcard.css";
-import backImage from "../../../../public/assets/beige-wooden-textured-flooring-background.jpg";
+import backImage from "../../../../public/assets/wood-background.jpg";
 
 function Flashcard({ title, ingredients, instructions, img }) {
   const [isFlipped, setIsFlipped] = useState(false);

@@ -50,7 +50,7 @@
 
 .flashcard-back {
   transform: rotateY(180deg);
-  background-image: url("/assets/beige-wooden-textured-flooring-background.jpg");
+  background-image: url("/assets/wood-background.jpg");
 }
 
 .flashcard-text {
