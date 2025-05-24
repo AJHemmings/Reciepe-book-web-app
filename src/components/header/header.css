@@ -13,7 +13,7 @@ html {
 body {
   background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/08/11/Modern-kitchen-interior-vector-Graphics-4927206-1.jpg");
   background-size: cover;
-  -webkit-animation: slidein 100s;
+  /* -webkit-animation: slidein 100s;
   animation: slidein 100s;
 
   -webkit-animation-fill-mode: forwards;
@@ -23,7 +23,7 @@ body {
   animation-iteration-count: infinite;
 
   -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 @-webkit-keyframes slidein {
