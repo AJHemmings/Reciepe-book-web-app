@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./form.css";
 import supabase from "../../utils/supabase";
+import { logError } from "../../utils/logError";
 
 function Form({ dispatch }) {
   const [title, setTitle] = useState("");
@@ -22,29 +23,39 @@ function Form({ dispatch }) {
       ingredients: processedIngredients,
       instructions: instructions
         .split("\n")
-        .filter((step) => step.trim() !== ""), // Split by newline
+        .filter((step) => step.trim() !== ""),
       imgUrl,
     };
 
-    // Insert into Supabase
-    const { data, error } = await supabase
-      .from("recipes")
-      .insert([newRecipe])
-      .select()
-      .single();
+    try {
+      const { data, error } = await supabase
+        .from("recipes")
+        .insert([newRecipe])
+        .select()
+        .single();
 
-    if (error) {
-      console.error("Error adding recipe:", error);
-      return;
+      if (error) {
+        console.error("Error adding recipe:", error.message);
+        console.log("Recipe data that caused error:", newRecipe);
+        await logError(
+          "Add Recipe - supabase insert",
+          error.message,
+          newRecipe
+        );
+        return;
+      }
+
+      dispatch({ type: "ADD_RECIPE", payload: data });
+
+      setTitle("");
+      setImgUrl("");
+      setIngredients("");
+      setInstructions("");
+    } catch (err) {
+      console.error("Unexpected error during recipe submission:", err.message);
+      console.log("Failing recipe object:", newRecipe);
+      await logError("Failing recipe object:", newRecipe);
     }
-
-    // Dispatch to update local state
-    dispatch({ type: "ADD_RECIPE", payload: data });
-
-    setTitle("");
-    setImgUrl("");
-    setIngredients("");
-    setInstructions("");
   };
 
   return (
